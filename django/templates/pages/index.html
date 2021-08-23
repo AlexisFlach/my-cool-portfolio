@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<section class="hero row d-flex justify-content-center page-80">
+<div class="row d-flex flex-sm-row-reverse justify-content-center my-auto">
+  <div class="col-md text-center">
+    <img src="{% static 'img/undraw_Online_party_re_7t6g.svg' %}" alt="hero-image" height="250"/>
+   </div>
+<div class="col-md">
+<div class="text-center justify-content-center p-5">
+  <h2 class="hero-title">Min goa portfolio</h2>
+  <p class="hero-text">En gubbe i <span class="red">mängden</span></p>
+  <a type="button" class="btn btn-light" href="{% url 'about' %}">Läs mer</a>
+</div>
+</div>
+</div>
+</section>
+
+{% endblock %}

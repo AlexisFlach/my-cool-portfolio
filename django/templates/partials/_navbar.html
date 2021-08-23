@@ -1,0 +1,19 @@
+{% load static %}
+<nav class="navbar navbar-expand-md navbar-light">
+  <!-- <a href="{% url 'index' %}" class="navbar-brand">Min Portfolio</a> -->
+  <!-- Om man istället vill ha en logga -->
+  <a href="{% url 'index' %}" class="navbar-brand">
+    <img class="d-inline-block align-top"src="{% static 'img/logo.png' %}" alt="portolio logo" width="100" height="100">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+    aria-controls="#toggleMobileMenu" aria-expanded="false" aria-label="Toggle Navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="toggleMobileMenu">
+    <ul class="navbar-nav ms-auto text-center">
+      <li><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+      <li><a class="nav-link" href="{% url 'about' %}">About</a></li>
+      <li><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+  </div>
+</nav>
